@@ -1,1 +1,1 @@
-worker: coffee firebase.coffee
+web: coffee firebase.coffee
