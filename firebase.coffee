@@ -48,6 +48,11 @@ runnersRef.once 'value', (snapshots) ->
 , (errorObject) ->
   console.log 'The read failed: ', errorObject.code
 
+n = 0
+
 setInterval ->
+  n++
+  util.puts "\n"
+  console.log "running for the #{n}th time"
   movePosition(runners)
-, 10000
+, 3000
